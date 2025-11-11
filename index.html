@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Pribadi | Mauldi Syah Rein</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* CSS Internal: Mengatur tata letak navigasi dengan Flexbox */
+        .navbar {
+            display: flex;
+            justify-content: center; 
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            transition: background-color 0.3s;
+        }
+
+        /* Efek hover pada menu navigasi */
+        .navbar a:hover {
+            background-color: #0075d4;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mauldi Syah Rein</h1>
+        <p> Mahasiswi Informatika | ower Mamau Resto </p>
+        
+        <nav class="navbar">
+            <a href="#keahlian">KEAHLIAN</a>
+            <a href="#profil">PROFIL</a>
+            <a href="#medsos">MEDSOS</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="main-content" id="profil">
+            <article class="profil-card">
+                <h2>👋 Selamat Datang di Dunia Saya</h2>
+                <p>
+                   Saya adalah mahasiswi di STIKOM EL RAHMA, saya tertarik dengan bidang pengembangan web, saya suka mempelajari HTML,CSS, dan JavaScript agar bisa membuat tampilan web yang bagus dan menarik.
+                </p>
+            </article>
+
+            <article id="keahlian">
+                <h3>🛠 Keahlian Utama</h3>
+                <ul>
+                    <li>HTML & CSS (Dasar)</li>
+                    <li>JavaScript (Dasar)</li>
+                    <li>Desain grafis</li>
+                </ul>
+            </article>
+
+        </section>
+
+        <aside class="sidebar">
+            <h3>Tentang saya :</h3>
+            <p><strong>Alamat:</strong> bogor, Indonesia</p>
+            <p><strong>Nim:</strong> 2511080070</p>
+            <p><strong>Prodi:</strong> informatika</p>
+            <div class="social-link">
+                <a href="https://www.linkedin.com/in/mauldi-syah-rein-b23b21388?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a> | <a href="https://github.com/msyahrein2004-dev">GitHub</a> | <a href="https://www.instagram.com/syahreinnnn?igsh=MXVxa21ycGo1NHFyMQ==">Instagram</a>
+            </div>
+        </aside>
+    </main>
+
+    <footer id="kontak">
+        <p>&copy; 2025 Mauldi Syah Rein. Hak Cipta Dilindungi.</p>
+        <p>Email: msyahrein2004@email.com | Telp: 0851-5929-9081</p>
+    </footer>
+    
+</body>
+</html>

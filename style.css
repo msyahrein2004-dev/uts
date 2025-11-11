@@ -1,0 +1,107 @@
+/*
+======================================================
+  STYLING UTAMA (CSS Eksternal)
+  Digunakan untuk layout dasar, font, dan warna.
+======================================================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam lebar elemen */
+}
+
+/* Pengaturan Body dan Font Dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font-family yang mudah dibaca */
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Background color halaman */
+    color: #333; /* Warna teks utama */
+}
+
+/*
+------------------------------------------------------
+  HEADER & NAVIGASI (Penggunaan Box Model & Background)
+------------------------------------------------------
+*/
+header {
+    background-color: #79005b; /* Warna background header (Hijau Tua) */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #cc8ab3; /* Contoh penerapan Box Model (Border) */
+    /* background-image: url('header-bg.jpg'); // Jika ingin menggunakan background image */
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+/*
+------------------------------------------------------
+  LAYOUT UTAMA MENGGUNAKAN FLEXBOX
+  Mengatur tata letak main-content dan sidebar.
+------------------------------------------------------
+*/
+.main-container {
+    display: flex; /* Menerapkan Flexbox */
+    max-width: 1200px;
+    margin: 20px auto; /* Contoh penerapan Box Model (Margin) untuk memusatkan konten */
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 3; /* Konten utama mengambil 3 bagian dari 4 */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    flex: 1; /* Sidebar mengambil 1 bagian dari 4 */
+    background-color: #e0f7fa; /* Warna background sidebar (Biru Sangat Muda) */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/*
+------------------------------------------------------
+  ELEMEN KHUSUS
+------------------------------------------------------
+*/
+
+/* Styling untuk Social Link di Sidebar (Contoh penerapan Box Model) */
+.social-link {
+    margin-top: 15px;
+    padding: 10px; /* Contoh penerapan Box Model (Padding) */
+    border: 1px dashed #00796b;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.social-link a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+}
+
+/*
+------------------------------------------------------
+  FOOTER
+------------------------------------------------------
+*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
